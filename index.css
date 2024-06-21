@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing : border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:black;
+    color:#fff;
+
+}
+.header{
+    width:100;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+}
+
+.container{
+    padding:10px;
+    
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.logo{
+    width:60px;
+}
+nav ul li{
+    display : inline-block;
+    list-style:none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color:#fefefe;
+    text-decoration:none;
+    font-size:16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:relative;
+}
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    background:rgb(0, 213, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-left:10%;
+    margin-top:10%;
+    font-size: 30px;
+    width:650px;
+    position: relative;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header-text .mynm{
+    color :rgb(0, 213, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+}
+.text{
+    color :rgb(0, 213, 255);
+    font-size: 50px;
+    filter: drop-shadow(2px 2px 4px rgb(0, 213, 255));
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-text p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.para{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px;
+    margin-top: 20px;
+}
+.header-text button{
+    background-color:rgb(0, 213, 255);
+    color:black;
+    width:150px;
+    height:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    border-radius:10px;
+    border:0px;
+    margin-top:30px;
+}
+.header-text button:hover{
+    filter:drop-shadow(0px 0px 20px rgb(0, 213, 255));
+}
+.self-img .me{
+    width:600px;
+    height: 600px;
+    margin-left:800px;
+    position: absolute;    
+    bottom: 0;
+    margin-top: 10px;
+    
+}
+.self-img .shp{
+    width:700px;
+    height: 650px;
+    margin-left:725px;
+    position: absolute;    
+    bottom: 0;
+    filter: blur(10px);
+    filter:drop-shadow(5px 5px 15px rgb(0, 213, 255));
+}
+
+
+/* ----------------------Education--------------------------- */
+
+.heading{
+    font-size:80px;
+    text-align: center;
+    margin:5rem 0;
+    margin-top: auto;
+}
+.edu{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:30px 15px;
+    width:900px;
+    height: 700px;
+    margin-left: 20%;
+}
+
+.timeline-items{
+    width: 900px;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content:"";
+    position:absolute;
+    width:3px;
+    height: 500px;
+    background-color: rgb(0, 213, 255);
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width:100%;
+    position:relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+    
+}
+.timeline-dot{
+    height: 21px;
+    width:21px;
+    background-color:rgb(0, 213, 255) ;
+    box-shadow: 0 0 25px rgb(0, 213, 255),
+                0 0 25px rgb(0, 213, 255);
+    position: absolute;
+    left:calc(50% - 0.5%);
+    border-radius: 50%;
+    top:10px;
+}
+.timeline-date{
+    font-size:20px;
+    font-weight: 800;
+    color:white;
+    margin:6px 0 15px;
+}
+.timeline-content{
+    border:3px solid rgb(0, 213, 255);
+    padding:20px 30px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px rgb(0, 213, 255);
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+}
+.timeline-content:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgb(0, 213, 255);
+}
+.timeline-content h3{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color:white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+.timeline-content p {
+    color:white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 213, 255) ;
+    border-radius: 50px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+/* ------------------------projects----------------------------- */
+
+
+.headiing{
+    text-align: center;
+    font-size: 80px;
+    margin:5rem 0;
+    color:white;
+}
+.project{
+    margin-top:7%;
+    max-width: 90%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.project-box{   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 500px;
+    border-radius: 3rem ;
+    cursor:pointer;
+    border:5px solid rgb(0, 213, 255);
+    background-image:url("mark.png");
+    transition: 0.6s ease-in-out;
+}
+.project-box:hover{
+    background-color: black;
+    color:rgb(0, 213, 255);
+    border:5px solid rgb(0, 213, 255);
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 20px rgb(0, 213, 255));
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+.project-info h4{
+    font-weight: 100px;
+    margin: 0px;
+    font-weight: 800;
+}
+.project-info p{
+    font-size:18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.project-info a button {
+    background-color:rgb(0, 213, 255);
+    color:black;
+    width:150px;
+    height:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    border-radius:10px;
+    border:0px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.project-info a button:hover{
+    filter:drop-shadow(0px 0px 20px rgb(0, 213, 255));
+}
+.mark{
+    width:100px;
+    height:100px;
+    color: white;
+    filter:invert();
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* ----------------------contact me------------------- */
+.contact{
+    margin-top: 20px;
+    background-color: black;
+}
+.contact h3{
+    margin:3rem;
+    color :white;
+}
+.contact h3 span{
+    color:rgb(0, 213, 255);
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    margin:5rem auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color:white;
+    background-color: black;
+    border-radius: 20px;
+    border:2px solid rgb(0, 213, 255);
+    margin: 1.5rem 0;
+    resize: none;
+}
+.contact form textarea{
+    padding: 2.5rem;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    background-color: black;
+    border-radius: 20px;
+    border:2px solid rgb(0, 213, 255);
+    margin: 1.5rem 0;
+    resize: none;
+    text-align: center; 
+}
+.input-box input{
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    border:2px solid rgb(0, 213, 255);
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    resize: none;
+    text-align: center;
+    margin: 10px;       
+}
+.btn{
+    background-color:rgb(0, 213, 255);
+    color:black;
+    width:150px;
+    height:40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px;
+    border-radius:10px;
+    border:0px;
+    margin-top:10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.btn:hover{
+    filter:drop-shadow(0px 0px 20px rgb(0, 213, 255));
+}
+/* ----------------------footer------------------------- */
+.footer{
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   padding: 10px;
+   background-color: rgb(21, 21, 21);
+}
+.social{
+    text-align: center;
+    padding:20px;
+    color:rgb(0, 213, 255);
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+}
+.footer .social img{
+    font-size: 25px;
+    color:rgb(0, 213, 255);
+    border:2px solid rgb(0, 213, 255);
+    width:42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius:50%;
+    margin:0 10px;
+    transition: 0.3 ease-in-out;
+    cursor:pointer;
+
+}
+.social .h2{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color:white;
+    text-underline-offset: 0;
+}
+.footer .social img:hover{
+    transform: scale(1.2) translateY(-5px);
+    background-color: black;
+    color: black;
+    box-shadow: 0 0 25px rgb(0, 213, 255);
+}
+.git{
+    filter: invert();
+}
+.footer-msg{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    bottom:0;
+    font-size: 12px;
+    color:rgb(148, 148, 148);   
+}
+/* -------------------------------Media Quries--------------------------------- */
+
+@media only screen and(max-width: 600px){
+    .mynm{
+        font-size: 30px;
+         
+    }
+    
+}
