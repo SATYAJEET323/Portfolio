@@ -562,18 +562,19 @@ nav ul li a:hover::after{
     }
     .self-img{
         transform: rotateY('-10');
-        bottom: 40%;
+        bottom: 38%;
         position: absolute;
+        margin-left: 12%;
     }
     .self-img .me{
         width: 400px;
         height: 400px;
-        margin-left:20px;
+        
     }
     .self-img .shp {
         width: 400px;
         height: 400px;
-        margin-left:0px;
+       
     }
     .heading{
         font-size: 50px;
@@ -599,6 +600,106 @@ nav ul li a:hover::after{
         font-size: 50px;
     }
 
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-box {
+        height: 400px;
+        width:350px;
+    }
+
+    .project-info p {
+        font-size: 16px;
+    }
+    .contact form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:3rem;
+        margin: auto;
+        max-width: 300px;
+    }
+    .btn{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+
+    }
+}
+
+
+@media only screen and (max-width: 468px) {
+    nav ul li {
+        margin: 10px 5px;
+    }
+    .header-text{
+        margin-top: 500px;
+        position: absolute;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text .mynm {
+        font-size: 40px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    .para{
+        font-size: 18px;
+    }
+    .self-img{
+        transform: rotateY('-10');
+        bottom: 38%;
+        position: absolute;
+        margin-left: 8%;
+    }
+    .self-img .me{
+        width: 400px;
+        height: 400px;
+        
+    }
+    .self-img .shp {
+        width: 400px;
+        height: 400px;
+       
+    }
+   .edu{
+    margin-top: 100px;
+    position: absolute;
+   }
+   .project{
+    margin-top: 900px;
+   }
+    .heading{
+        font-size: 50px;
+    }
+    .timeline-content h3 {
+        font-size: 24px;
+    }
+
+    .timeline-content p {
+        font-size: 15px;
+    }
+    .timeline-dot{
+       
+        left:calc(35% - 0.5%);
+        border-radius: 50%;
+        
+    }
+    
+    .timeline-items::before{
+        display: none;
+    }
+    .headiing{
+        font-size: 50px;
+    }
+    
     .project-container {
         grid-template-columns: 1fr;
     }
