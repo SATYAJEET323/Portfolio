@@ -759,13 +759,13 @@ nav ul li a:hover::after{
         margin-left: 0;
     }
     .self-img .me{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         
     }
     .self-img .shp {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
        
     }
    .edu{
@@ -828,4 +828,9 @@ nav ul li a:hover::after{
         margin-left: 30%;
 
     }
+    .contact form .input-box,
+    .contact form textarea {
+        padding: 2rem;
+    }
+}
 }
