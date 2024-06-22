@@ -14,7 +14,7 @@ body{
 
 }
 .header{
-    width:100;
+    width:80;
     height:100vh;
     background-size:cover;
     background-position:center;
@@ -733,7 +733,8 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width: 390px) {
     nav ul li {
-        margin: 10px 5px;
+        margin: 8px 3px;
+        font-size: 10px;
     }
     .header-text{
         margin-top: 420px;
@@ -759,13 +760,13 @@ nav ul li a:hover::after{
         margin-left: 0;
     }
     .self-img .me{
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         
     }
     .self-img .shp {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
        
     }
    .edu{
@@ -779,11 +780,15 @@ nav ul li a:hover::after{
         font-size: 50px;
     }
     .timeline-content h3 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .mark{
+        width:70px;
+        height: 70px;
     }
 
     .timeline-content p {
-        font-size: 15px;
+        font-size: 12px;
     }
     .timeline-dot{
        
@@ -816,7 +821,7 @@ nav ul li a:hover::after{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap:3rem;
+        gap:2rem;
         margin: auto;
         max-width: 300px;
     }
@@ -828,9 +833,15 @@ nav ul li a:hover::after{
         margin-left: 30%;
 
     }
+    .contact{
+        margin:2rem
+    }
     .contact form .input-box,
     .contact form textarea {
-        padding: 2rem;
+        padding: 1rem;
+
     }
-}
+    .input-box input{
+        width:300px;   
+    }
 }
